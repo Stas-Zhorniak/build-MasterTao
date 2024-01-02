@@ -100,6 +100,9 @@ ul {
   border-radius: 90px;
   font-weight: 600;
 }
+.btn:active:after {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(323deg) brightness(107%) contrast(101%);
+}
 
 .btn-primary {
   max-width: 171px;
@@ -403,6 +406,73 @@ input:checked + label::before {
   height: 10px;
 }
 
+footer h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 146%;
+}
+footer a {
+  color: #85899c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160.5%;
+}
+footer .footer-container {
+  margin-top: 41px;
+  max-width: 1140px;
+  padding: 0;
+  width: 100%;
+}
+footer .footer-container:before {
+  content: "";
+  position: static;
+  display: inline-block;
+  height: 2px;
+  background-color: #e58d35;
+  margin: 0 auto;
+}
+footer .footer-container .footer-nav {
+  margin-top: 27px;
+}
+footer .footer-container .footer-nav .contacts-info {
+  max-width: 263px;
+  width: 100%;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+footer .footer-container .footer-nav .contacts-info .footer-logo {
+  margin-bottom: 30px;
+}
+footer .footer-container .footer-nav .contacts-info .footer-email a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 162.5%;
+}
+footer .footer-container .footer-nav .contacts-info .footer-adress {
+  margin-bottom: 20px;
+}
+footer .footer-container .footer-nav .contacts-info .footer-networks a {
+  margin-right: 5px;
+  text-decoration: none;
+}
+footer .footer-container .footer-nav .footer-navbar {
+  max-width: 784px;
+  width: 100%;
+  padding-right: 78px;
+}
+footer .footer-container .footer-nav .footer-navbar .navbar-item h4 {
+  margin-bottom: 15px;
+}
+footer .footer-container .footer-nav .footer-navbar .navbar-item ul li {
+  margin-bottom: 7px;
+}
+footer .footer-container .footer-nav .footer-navbar .navbar-item:nth-child(2) {
+  padding-left: 22px;
+}
+
 @media (min-width: 992px) {
   .navbar-nav {
     margin-top: 9px;
@@ -562,6 +632,202 @@ input:checked + label::before {
     margin-bottom: 20px;
     width: 100%;
     height: auto;
+  }
+  .company-info {
+    padding-top: 152px;
+    padding-bottom: 113px;
+  }
+  .company-info .container {
+    padding-left: 92px;
+  }
+  .company-info .container .company-info-title {
+    margin-bottom: 43px;
+  }
+  .company-info .container .company-info-title h2::after {
+    margin: 17px 0;
+  }
+  .company-info .container .company-info-description {
+    max-width: 555px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 170%;
+  }
+  .company-info .container .company-info-description p {
+    margin-bottom: 24px;
+  }
+  .company-info .container .company-info-description p strong {
+    font-weight: 400;
+  }
+  .company-info .container .company-info-img {
+    position: absolute;
+    top: -58px;
+    right: 90px;
+  }
+  .company-info .container .company-info-img .info-img {
+    max-width: 550px;
+    width: 36vw;
+  }
+  .questions .container .questions-title {
+    text-align: center;
+    margin-bottom: 49px;
+  }
+  .questions .container .questions-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+  }
+  .questions .container .questions-content .accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 716px;
+    width: 100%;
+    border-color: #3a444e;
+  }
+  .questions .container .questions-content .accordion .accordion-item {
+    background: none;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    border: 1px solid #3a444e;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding-left: 13px;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 18px;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button::after {
+    right: 20px;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+    right: 20px;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-collapse .accordion-body {
+    max-width: 583px;
+    width: 100%;
+    padding-left: 34px;
+    padding-top: 0;
+    font-size: 17px;
+  }
+  .questions .container .questions-content .accordion .active-bg {
+    background: #fff;
+  }
+  .questions .container .questions-content .accordion .active-bg .accordion-header .accordion-button {
+    color: #000;
+  }
+  .questions .container .user-message {
+    padding: 37px 35px 39px 45px;
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    width: 100%;
+    background: #363a4d;
+    border-radius: 20px;
+  }
+  .questions .container .user-message .message-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 126%;
+    margin-bottom: 8px;
+  }
+  .questions .container .user-message .message-description {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 126%;
+    margin-bottom: 23px;
+  }
+  .questions .container .user-message label {
+    display: none;
+  }
+  .colaboration {
+    margin-top: 98px;
+    padding-top: 92px;
+    padding-bottom: 80px;
+  }
+  .colaboration::before {
+    border-radius: 20px;
+    left: 43px;
+    right: 43px;
+  }
+  .colaboration .container {
+    padding-left: 93px;
+    padding-right: 88px;
+  }
+  .colaboration .container .colaboration-title {
+    margin-bottom: 92px;
+  }
+  .colaboration .container .colaboration-title h2 {
+    line-height: 135%;
+  }
+  .colaboration .container .colaboration-title h2::after {
+    background-color: #89c249;
+  }
+  .colaboration .container .colaboration-title h2 span p {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-bottom: 0;
+  }
+  .colaboration .container .colaboration-title h2 span p::first-letter {
+    text-transform: uppercase;
+  }
+  .colaboration .container .colaboration-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .colaboration .container .colaboration-content .second-part ul {
+    padding-top: 25px;
+  }
+  .colaboration .container .colaboration-content .second-part ul li:last-child {
+    list-style-type: none;
+    max-width: 243px;
+    width: 100%;
+    padding-top: 14px;
+    margin-left: -11px;
+  }
+  .colaboration .container .content-part {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  .colaboration .container .content-part ul {
+    max-width: 528px;
+    width: 100%;
+  }
+  .colaboration .container .content-part ul li {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 156.5%;
+    margin-bottom: 28px;
+  }
+  .colaboration .container .content-part .content-img img {
+    max-width: 555px;
+    width: 100%;
+    height: 406px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+  }
+  .footer-container:before {
+    content: "";
+    position: static;
+    display: inline-block;
+    max-width: 1140px;
+    width: 100%;
+    height: 2px;
+    background-color: #e58d35;
+    margin: 0 auto;
+  }
+  .footer-container .footer-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-container .footer-nav .footer-navbar {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -852,6 +1118,235 @@ input:checked + label::before {
   }
   .services .slick-dots {
     bottom: -34px;
+  }
+  .company-info {
+    padding-top: 54px;
+  }
+  .company-info .container {
+    position: relative;
+  }
+  .company-info .container .company-info-title {
+    text-align: center;
+  }
+  .company-info .container .company-info-title h2::after {
+    margin: 21px auto 28px;
+  }
+  .company-info .container .company-info-description {
+    padding: 0 8px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 149.5%;
+  }
+  .company-info .container .company-info-description p {
+    margin-bottom: 21px;
+  }
+  .company-info .container .company-info-description p strong {
+    font-weight: 400;
+  }
+  .company-info .container .company-info-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .company-info .container .company-info-img .info-img {
+    max-width: 278px;
+    width: 100%;
+    height: 294px;
+  }
+  .questions {
+    padding-top: 43px;
+  }
+  .questions .container .questions-title {
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  .questions .container .questions-title h2::after {
+    margin-top: 23px;
+  }
+  .questions .container .questions-content {
+    padding: 0px 8px;
+  }
+  .questions .container .questions-content .accordion {
+    display: flex;
+    flex-direction: column;
+    border-color: #3a444e;
+  }
+  .questions .container .questions-content .accordion .accordion-item {
+    background: none;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    border: 1px solid #3a444e;
+  }
+  .questions .container .questions-content .accordion .accordion-item:last-child {
+    margin-bottom: 24px;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding-left: 23px;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button .btn-title {
+    max-width: 225px;
+    width: 100%;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button::after {
+    right: -95px;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+    right: -95px;
+  }
+  .questions .container .questions-content .accordion .accordion-item .accordion-collapse .accordion-body {
+    width: 100%;
+    padding-left: 21px;
+    padding-bottom: 7px;
+    padding-top: 0;
+    font-size: 14px;
+  }
+  .questions .container .questions-content .accordion .active-bg {
+    background: #fff;
+  }
+  .questions .container .questions-content .accordion .active-bg .accordion-header .accordion-button {
+    color: #000;
+  }
+  .questions .container .user-message {
+    padding: 37px 20px 39px 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    width: 100%;
+    background: #363a4d;
+    border-radius: 20px;
+  }
+  .questions .container .user-message .message-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 126%;
+    margin-bottom: 8px;
+  }
+  .questions .container .user-message .message-description {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 126%;
+    margin-bottom: 23px;
+  }
+  .colaboration {
+    margin-top: 61px;
+    padding-top: 52px;
+    padding-bottom: 37px;
+  }
+  .colaboration::before {
+    border-radius: 0;
+    left: 0;
+    right: 0;
+  }
+  .colaboration .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .colaboration .container .colaboration-title {
+    margin-bottom: 43px;
+  }
+  .colaboration .container .colaboration-title h2 {
+    line-height: 140%;
+  }
+  .colaboration .container .colaboration-title h2::after {
+    margin-top: 28px;
+    background-color: #89c249;
+  }
+  .colaboration .container .colaboration-title h2 span p {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-bottom: 0;
+  }
+  .colaboration .container .colaboration-title h2 span p::first-letter {
+    text-transform: uppercase;
+  }
+  .colaboration .container .colaboration-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .colaboration .container .colaboration-content .second-part ul {
+    padding-top: 0;
+  }
+  .colaboration .container .colaboration-content .second-part ul li {
+    margin-bottom: 0;
+  }
+  .colaboration .container .colaboration-content .second-part ul li:last-child {
+    list-style-type: none;
+    width: 100%;
+    padding-top: 27px;
+    margin: 0 auto;
+  }
+  .colaboration .container .colaboration-content .second-part ul li button {
+    max-width: 335px;
+    padding-right: 183px;
+  }
+  .colaboration .container .colaboration-content .second-part .content-img {
+    margin-bottom: 27px;
+  }
+  .colaboration .container .colaboration-content .content-part {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .colaboration .container .colaboration-content .content-part ul {
+    order: 2;
+    max-width: 528px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .content-img {
+    order: 1;
+    margin-bottom: 35px;
+  }
+  .content-img img {
+    max-width: 555px;
+    width: 100%;
+    height: 221px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+  }
+  li {
+    list-style-position: inside;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 149.5%;
+    margin-bottom: 21px;
+  }
+  footer .footer-container {
+    margin-top: 56px;
+  }
+  footer .footer-container::before {
+    display: block;
+    max-width: 335px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  footer .footer-container .footer-nav {
+    display: block;
+    margin-top: 33px;
+  }
+  footer .footer-container .footer-nav .contacts-info {
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer .footer-container .footer-nav .footer-navbar {
+    display: none;
   }
 }
 .hamburger {
@@ -1209,81 +1704,60 @@ label {
   justify-content: space-between;
 }
 
-.company-info {
-  padding-top: 152px;
-  padding-bottom: 113px;
-}
 .company-info .container {
   position: relative;
-  padding-left: 92px;
-}
-.company-info .container .company-info-title {
-  margin-bottom: 43px;
-}
-.company-info .container .company-info-title h2::after {
-  margin: 17px 0;
-}
-.company-info .container .company-info-description {
-  max-width: 555px;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 170%;
-}
-.company-info .container .company-info-description p {
-  margin-bottom: 24px;
-}
-.company-info .container .company-info-description p strong {
-  font-weight: 400;
-}
-.company-info .container .company-info-img {
-  position: absolute;
-  top: -58px;
-  right: 90px;
-}
-.company-info .container .company-info-img .info-img {
-  max-width: 550px;
 }
 
 .questions .container .questions-title {
   text-align: center;
-  margin-bottom: 49px;
-}
-.questions .container .questions-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 80px;
 }
 .questions .container .questions-content .accordion {
   display: flex;
   flex-direction: column;
-  max-width: 716px;
   width: 100%;
   border-color: #3a444e;
 }
 .questions .container .questions-content .accordion .accordion-item {
   background: none;
-  margin-bottom: 13px;
   border-radius: 10px;
   border: 1px solid #3a444e;
 }
 .questions .container .questions-content .accordion .accordion-item .accordion-header {
   display: flex;
   align-items: center;
+  position: relative;
   height: 64px;
-  padding-left: 13px;
 }
 .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button {
   background: none;
   color: #fff;
-  font-size: 18px;
   font-weight: 700;
   line-height: 124.5%;
 }
+.questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Cg clip-path='url(%23clip0_5869_4095)'%3E%3Cpath d='M0.421875 13.5C0.421875 6.27539 6.27539 0.421875 13.5 0.421875C20.7246 0.421875 26.5781 6.27539 26.5781 13.5C26.5781 20.7246 20.7246 26.5781 13.5 26.5781C6.27539 26.5781 0.421875 20.7246 0.421875 13.5ZM13.5 24.8906C19.7596 24.8906 24.8906 19.8229 24.8906 13.5C24.8906 7.24043 19.8229 2.10938 13.5 2.10938C7.24043 2.10938 2.10938 7.17715 2.10938 13.5C2.10938 19.7596 7.17715 24.8906 13.5 24.8906ZM14.1592 20.0127L20.2289 13.9482C20.4768 13.7004 20.4768 13.2996 20.2289 13.0518L14.1592 6.9873C13.9113 6.73945 13.5105 6.73945 13.2627 6.9873L12.8988 7.35117C12.651 7.59902 12.651 8.01035 12.9094 8.25293L17.4182 12.6035H7.38281C7.03477 12.6035 6.75 12.8883 6.75 13.2363V13.7637C6.75 14.1117 7.03477 14.3965 7.38281 14.3965H17.4182L12.9041 18.7471C12.651 18.9949 12.6457 19.401 12.8936 19.6488L13.2574 20.0127C13.5105 20.2605 13.9113 20.2605 14.1592 20.0127Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5869_4095'%3E%3Crect width='27' height='27' fill='white' transform='matrix(-1 0 0 1 27 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  width: 27px;
+  height: 27px;
+  transform: none;
+  transition: 0.75s;
+}
+.questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Cg clip-path='url(%23clip0_5858_78)'%3E%3Cpath d='M13.5 26.5781C6.27539 26.5781 0.421874 20.7246 0.421874 13.5C0.421875 6.27539 6.27539 0.421875 13.5 0.421876C20.7246 0.421876 26.5781 6.27539 26.5781 13.5C26.5781 20.7246 20.7246 26.5781 13.5 26.5781ZM24.8906 13.5C24.8906 7.24043 19.8229 2.10938 13.5 2.10938C7.24043 2.10938 2.10937 7.17715 2.10937 13.5C2.10937 19.7596 7.17715 24.8906 13.5 24.8906C19.7596 24.8906 24.8906 19.8229 24.8906 13.5ZM20.0127 12.8408L13.9482 6.77109C13.7004 6.52324 13.2996 6.52324 13.0518 6.77109L6.9873 12.8408C6.73945 13.0887 6.73945 13.4895 6.9873 13.7373L7.35117 14.1012C7.59902 14.349 8.01035 14.349 8.25293 14.0906L12.6035 9.58184L12.6035 19.6172C12.6035 19.9652 12.8883 20.25 13.2363 20.25L13.7637 20.25C14.1117 20.25 14.3965 19.9652 14.3965 19.6172L14.3965 9.58184L18.7471 14.0959C18.9949 14.349 19.401 14.3543 19.6488 14.1064L20.0127 13.7426C20.2605 13.4895 20.2605 13.0887 20.0127 12.8408Z' fill='%23E58D35'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5858_78'%3E%3Crect width='27' height='27' fill='white' transform='matrix(-4.37114e-08 1 1 4.37114e-08 0 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  width: 27px;
+  height: 27px;
+}
 .questions .container .questions-content .accordion .accordion-item .accordion-collapse .accordion-body {
-  max-width: 583px;
   width: 100%;
-  padding-left: 34px;
   padding-top: 0;
+  color: #282b38;
+  font-weight: 300;
+  line-height: 144.5%;
 }
 .questions .container .questions-content .accordion .active-bg {
   background: #fff;
@@ -1291,8 +1765,8 @@ label {
 .questions .container .questions-content .accordion .active-bg .accordion-header .accordion-button {
   color: #000;
 }
-.questions .container .user-message {
-  padding: 38px 45px 38px 40px;
+.questions .user-message {
+  padding: 37px 35px 39px 45px;
   display: flex;
   flex-direction: column;
   max-width: 390px;
@@ -1300,22 +1774,22 @@ label {
   background: #363a4d;
   border-radius: 20px;
 }
-.questions .container .user-message .message-title {
+.questions .user-message .message-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 126%;
   margin-bottom: 8px;
 }
-.questions .container .user-message .message-description {
+.questions .user-message .message-description {
   font-size: 17px;
   font-weight: 300;
   line-height: 126%;
   margin-bottom: 23px;
 }
-.questions .container .user-message label {
+.questions .user-message label {
   display: none;
 }
-.questions .container .user-message input {
+.questions .user-message input {
   margin-bottom: 14px;
   padding-left: 20px;
   border: none;
@@ -1325,14 +1799,62 @@ label {
   height: 56px;
   outline: none;
 }
-.questions .container .user-message input::placeholder {
+.questions .user-message input::placeholder {
   color: #cbcbcb;
   font-size: 15px;
   line-height: 126%;
 }
-.questions .container .user-message .btn {
+.questions .user-message .message-input {
+  height: 70px;
+}
+.questions .user-message .btn {
   margin-top: 12px;
   max-width: 310px;
   width: 100%;
+}
+
+.colaboration::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: #363a4d;
+  top: 0;
+  margin: 0 auto;
+  max-width: 1850px;
+  height: 100%;
+  z-index: -1;
+}
+.colaboration .container .colaboration-title {
+  text-align: center;
+}
+.colaboration .container .colaboration-title h2 span p {
+  color: #fff;
+  line-height: 124.5%;
+  text-transform: lowercase;
+  margin-bottom: 0;
+}
+.colaboration .container .colaboration-title h2 span p::first-letter {
+  text-transform: uppercase;
+}
+.colaboration .container .colaboration-content .second-part ul li:last-child {
+  list-style-type: none;
+  width: 100%;
+}
+.colaboration .container .colaboration-content .content-part ul {
+  max-width: 528px;
+  width: 100%;
+}
+.colaboration .container .colaboration-content .content-part ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 5px;
+}
+.colaboration .container .colaboration-content .content-part .content-img img {
+  max-width: 555px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+  filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
 }
 /*# sourceMappingURL=style.css.map */
