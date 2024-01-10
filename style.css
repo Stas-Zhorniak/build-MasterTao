@@ -1199,7 +1199,7 @@ footer .footer-container .footer-nav .footer-navbar .navbar-item:nth-child(2) {
     width: 100%;
   }
   .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button::after {
-    right: -95px;
+    right: 15px;
   }
   .questions .container .questions-content .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
     right: -95px;
